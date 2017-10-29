@@ -15,15 +15,16 @@ router.get('/', function(req, res, next) {
     //     someKey: 'some-value2'
     // });
 
-    //logger.info('hello-info');
+    logger.info('hello-info');
+    logger.error('hello-error');
 
-    logger.log({
-        level: 'info',
-        timestamp: function () {
-            return moment().format('YYYY-MM-DD hh:mm:ss')
-        },
-        message: 'Hello distributed log files!'
-    });
+    // logger.log({
+    //     level: 'info',
+    //     timestamp: function () {
+    //         return moment().format('YYYY-MM-DD hh:mm:ss')
+    //     },
+    //     message: 'Hello distributed log files!'
+    // });
 
     // logger.error('hello-error');
     // logger.debug('hello-debug');
