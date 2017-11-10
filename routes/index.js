@@ -16,6 +16,8 @@ router.get('/', function(req, res, next) {
     // });
 
     logger.info('hello-info');
+    // This is using the meta field in json
+    logger.info('hello-info',{timestamp:new Date()});
     logger.error('hello-error');
 
     // logger.log({
